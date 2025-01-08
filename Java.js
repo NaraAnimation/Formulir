@@ -1,2 +1,19 @@
+    
+        const form = document.getElementById('myForm');
 
-document.write(unescape('%20%20%20%20%0A%20%20%20%20%20%20%20%20const%20form%20%3D%20document.getElementById%28%27myForm%27%29%3B%0A%20%20%20%20%20%20%20%20form.addEventListener%28%27submit%27%2C%20%28event%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20event.preventDefault%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20const%20nama%20%3D%20document.getElementById%28%27nama%27%29.value%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20const%20nomorHp%20%3D%20document.getElementById%28%27nomorHp%27%29.value%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20const%20pesan%20%3D%20document.getElementById%28%27pesan%27%29.value%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20const%20message%20%3D%20%60%3E%20ASSALAMUALAIKUM....%5Cn%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%5Cn%3E%20Halo%2C%20saya%20%24%7Bnama%7D%5Cn%3E%20No%20wa%20%3A%20%24%7BnomorHp%7D%5Cn%3E%20Keperluan%20saya%20%3A%20%24%7Bpesan%7D%5Cn%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%u25AD%u25AC%60%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20Format%20link%20WhatsApp%0A%20%20%20%20%20%20%20%20%20%20%20%20const%20whatsappLink%20%3D%20%60https%3A//wa.me/62857113748613%3Ftext%3D%24%7BencodeURIComponent%28message%29%7D%60%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20Alihkan%20pengguna%20ke%20link%20WhatsApp%0A%20%20%20%20%20%20%20%20%20%20%20%20window.open%28whatsappLink%2C%20%27_blank%27%29%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20'));
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const nama = document.getElementById('nama').value;
+            const nomorHp = document.getElementById('nomorHp').value;
+            const pesan = document.getElementById('pesan').value;
+
+            const message = `> ASSALAMUALAIKUM....\n▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬\n> Halo, saya ${nama}\n> No wa : ${nomorHp}\n> Keperluan saya : ${pesan}\n▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬`;
+
+            // Format link WhatsApp
+            const whatsappLink = `https://wa.me/62857113748613?text=${encodeURIComponent(message)}`;
+
+            // Alihkan pengguna ke link WhatsApp
+            window.open(whatsappLink, '_blank');
+        });
+    
