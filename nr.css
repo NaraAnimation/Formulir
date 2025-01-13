@@ -1,0 +1,75 @@
+body{
+background-color: black;
+   background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        .title{
+            text-align: center;
+            font-size: 2.5em;
+            color: #000;
+        }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 20px;
+      right: 0;
+      width: 100%;
+      height: 88%;
+      border: none; /* Sembunyikan border iframe */
+    }
+.jing {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+.an{
+    position: fixed;
+    bottom: 162px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.nyet {
+  background-color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 5px solid white;
+  border-radius: 4px;
+  font-size: 30px;
+  color: white;
+  border-radius: 20px;
+}
+marquee {
+  font-size: 30px;
+  color: white;
+}
